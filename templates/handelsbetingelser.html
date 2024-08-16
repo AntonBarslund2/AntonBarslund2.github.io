@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/final.css">
+    <link rel="stylesheet" type="text/css" href="../static/Handelsbetingelser.css">
+    <title>Handelsbetingelser</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
+</head>
+<body>
+    <header> 
+        <div id="headerimg"></div>
+        
+        <nav class="nav-links">
+            <a href="#">OM MIG</a>
+            <a href="#contact">KONTAKT</a>
+            <a href="#">PRISER</a>
+        </nav>
+        <div class="menu-icon" onclick="toggleNav()">☰</div>
+    </header>
+
+    <div class="segment ha1">
+        <div id="ha1txt">
+            <a href="final.html"><div id="halogo"></div></a>
+            
+            <div class="textbox">
+                <span><h1>Handelsbetingelser</h1></span>
+                <ul>
+                    <li>CVR: 43834223 </li>
+                    <li>Telefon nr: 26364950</li>
+                    <li>Adresse: </li>
+                </ul>
+                <ul>
+                    <li>CVR: 43834223 </li>
+                    <li>Telefon nr: </li>
+                    <li>Adresse: </li>
+                </ul>
+                <ul>
+                    <li>CVR: 43834223 </li>
+                    <li>Telefon nr: </li>
+                    <li>Adresse: </li>
+                </ul>
+                <ul>
+                    <li>CVR: 43834223 </li>
+                    <li>Telefon nr: </li>
+                    <li>Adresse: </li>
+                </ul>
+                <ul>
+                    <li>CVR: 43834223 </li>
+                    <li>Telefon nr: </li>
+                    <li>Adresse: </li>
+                </ul>
+            </div>
+        </div>
+        <div id="ha1form">
+            <div id="contact">
+                <div id="formheader">KONTAKT MIG</div>
+                <form id="contactme">
+                    <div id="formname" class="formrow">
+                        <input name="firstname" id="firstname" placeholder="FORNAVN">
+                        <input name="surename" id="surename" placeholder="EFTERNAVN">
+                    </div>
+                    <div class="formrow">
+                        <input name="email" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="formrow">
+                        <input name="phonenr" id="phonenr" placeholder="Telefon nr.">
+                    </div>
+                    <div class="formrow">  
+                        <select name="course" id="course" >
+                            <option value="placeholder">Hvilket forløb</option>
+                            <option value="Online">Online</option>
+                            <option value="Offline">Offline</option>
+                          </select>
+                    </div>
+                    <div class="formrow">
+                        <select name="experience" id="experience" >
+                            <option value="placeholder">Erfaring</option>
+                            <option value="beginner">0 - 2 år (begynder)</option>
+                            <option value="intermediate">2 - 4 (øvet)</option>
+                            <option value="advanced">4+ år (trænet)</option>
+                          </select>
+                    </div>
+                    <div class="formrow">
+                        <input type="text" name="message" id="message" placeholder="Besked f.eks. erfaring, eller lidt om hvem du er">
+                    </div>
+                    <div class="formrow">
+                        <button type="submit" class="app-form-button" id="signup">Skriv dig op</button>
+                    </div>
+    
+    
+                    
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div id="footerlinks">
+            <div class="footerlink"><a href="handelsbetingelser.html">Handelsbetingelser</a></div>
+            <div class="footerlink"></div>
+            <div class="footerlink">© Bruland creative performance</div>
+            <div class="footerlink">All Rights Reserved. CVR: 43834223</div>
+        </div>
+        <div id="footercontacts">
+            <div id="instagram" class="social" onclick="redirectToInstagram()"></div>
+            <div id="threads" class="social" onclick="redirectToThreads()"></div>
+            <div id="x" class="social" onclick="redirectToX()"></div>
+            <div id="linked_in" class="social" onclick="redirectToLinkedIn()"></div>
+        </div>
+    </footer>
+    
+</body>
+<script src="../static/final.js"></script>
+
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>     
+<script type="text/javascript">
+    emailjs.init('wd4apaVDXT-Qebbcc')
+</script>
+</html>

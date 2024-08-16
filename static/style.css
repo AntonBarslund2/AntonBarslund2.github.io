@@ -1,0 +1,260 @@
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif; /* Forslag til en font - kan ændres efter præference */
+    color: #fff; /* Hvid tekst på billedet for bedre læsbarhed */
+    height: 100vh;
+}
+header{
+    background-color: #333;
+    font-size: 20px;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: auto;
+    text-align: left;
+    
+}
+header img{
+    padding-left: 50px;
+    margin: 5px;
+}
+
+.nav-links {
+    z-index: 12;
+    display: flex;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+
+#backpic{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: fixed;
+    top: auto;
+    width: 100%;
+}
+#backpic img{
+    z-index: -1;
+    text-align: center;
+    height: auto;
+    opacity: 0.9;
+    object-fit: none;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    max-width: 100%; /* Ensure the width doesn't exceed its original size */
+    object-fit: contain; /* Maintain aspect ratio and fit the image within the container */
+
+}
+.content{
+    height: auto;
+    text-align: center;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Baggrundsfarve med gennemsigtighed for bedre læsbarhed */
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
+    line-height: 1.6;
+}
+
+
+#about{
+    opacity: 0.9;
+}
+#abouttext{
+    margin: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 30px;
+    width: 30%;
+}
+
+#socials{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+.social{
+    width: 70px;
+    height: 70px;
+    margin: 30px 30px;
+}
+
+#instagram{
+    background-image: url("../static/pics/instagram_dark.png");
+    background-size: contain;
+}
+
+#threads{
+    background-image: url("../static/pics/threads.png");
+    background-size: contain;
+}
+
+#x{
+    background-image: url("../static/pics/x.png");
+    background-size: contain;
+}
+
+#linked_in{
+    background-image: url("../static/pics/linked_in_dark.png");
+    background-size: contain;
+}
+
+.social:hover{
+    width: 80px;
+    height: 80px;
+    margin: 20px 25px;
+}
+
+#contact{
+    opacity: 0.9;
+    display: flex;
+}
+
+#offers{
+    margin: 100px 0px 100px 50px;
+    padding: 20px 30px 50px 30px;
+    margin: 50px;
+    width: 50%;
+    height: 700px;
+    display: flex;
+}
+
+.arrow{
+    padding: 40% 0px;
+    width: 50px;
+    font-size: 100px;
+    cursor: pointer;
+}
+.offer{
+    border: 2px solid black;
+    margin: auto;
+    height: 300px;
+    width: 130px;
+    border-radius: 10px;
+    transition: 0.8s;
+    overflow: hidden;
+    position: relative;
+}
+.offerheader{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.offerdescription{
+    font-size: 15px;
+}
+
+.offertext{
+    display: none;
+}
+
+.offerprice{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.offerfocus{
+    height: 600px;
+    width: 280px;
+}
+.offer.offerfocus .offertext{
+    display: block;
+}
+
+.offer.offerfocus .offerdescription{
+    display: none;
+}
+
+.offer.offerfocus .offerheader{
+    height: 100px;
+}
+
+
+
+
+
+
+#contactform{
+    margin: 100px 50px 100px 30%;
+    padding: 20px 30px 50px 30px;
+    width: 30%;
+    letter-spacing: 3px;
+}
+
+#contactform label{
+    font-size: 25px;
+}
+#contactform input{
+    margin-bottom: 20px;
+    width: 70%;
+    height: 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: rgb(101, 101, 101) ;
+    color: white;
+    padding: 15px;
+    letter-spacing: 2px;
+}
+
+#send{
+    background-color: rgb(101, 101, 101) ;
+    padding: 10px 60px;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    margin: 10px 0px 0px 0px;
+    letter-spacing: 3px;
+}
+.send:hover{
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+#contactform input::placeholder {
+    color: white; /* Set the placeholder color, here it's a gray color (#999) */}
+
+
+footer{
+    height: auto;
+    background-color: #333;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        line-height: 1.6;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
